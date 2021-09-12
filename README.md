@@ -1,7 +1,4 @@
-# BusinessCard-SimpleSimon
-Simple Simon memory game circuit and code via ATTiny44 
-
-Assembly Notes:
+RES ARRAY 4 RES 330 OHM 5SIP
 
 1. I recommend adding a electrolytic capacitor across P1-1 to P1-6 for noisy power supplies.
 2. When installing the pushbutton switchesm, that there is a trace connecting the two common poles.
@@ -18,6 +15,19 @@ Arduino D10 -> Pin 4 on chip (P1-5 on board) RESET
 Arduino 5V  -> Pin 1 on chip (P1-1 on board) Vcc
 Arduino Gnd -> Pin 14 on chip (P1-5 on board) Gnd
 
-Follow these instructions: https://www.instructables.com/Program-an-ATtiny44458485-with-Arduino/
+Then:
+https://www.instructables.com/Program-an-ATtiny44458485-with-Arduino/
 
-The code is SimpleSimon.ino in this repository.
+The code is Simon-says.ino in this repository.
+
+Parts: 
+U1: ATTiny44.  Digikey: ATTINY44-20PU 
+RN1: RES ARRAY 4 RES 3.3K OHM 5SIP Digikey: 4605X-101-332LF
+RN2: RES ARRAY 4 RES 330 OHM 5SIP Digikey: 4605X-101-331LF
+Red, Blue, Green, Yellow LEDs
+4.7uF 25V Capacitor Digikey: 732-8624-1-ND
+Amber LED:C503B-ACN-CY0Z0252-030CT-ND
+Blue LED: C503B-BCN-CV0Z0461-ND
+Green LED: 2197-NTE30141-ND
+Red LED: C503B-RAN-CA0B0AA1-ND
+4 Switches: SWITCH TACTILE SPST-NO 0.05A 12V Digikey: PTS645SH50-2 LFS
